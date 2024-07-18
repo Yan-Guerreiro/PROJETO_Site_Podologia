@@ -1,0 +1,135 @@
+body {
+    background-color: #FFE6E6;
+    color: rgb(0, 0, 0);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 30px;
+}
+
+a{
+    color: rgb(153, 76, 76);
+    font-family: Belleza, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 130, 130);
+    transition: 0.4s all;
+}
+
+
+h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(255, 148, 148);
+}
+
+h2{
+    font-size: 50px;
+    line-height: 10px;
+    color: rgb(255, 146, 146);
+    position: relative;
+    top: 130px;
+}
+
+span{
+    color: rgb(233, 121, 121);
+}
+
+p{
+    font-size: 23px;
+    color: rgb(153, 76, 76);
+    line-height: 30px;
+    max-width: 420px;
+    font-family: Belleza, sans-serif;
+    position: relative;
+    top: 150px;
+}
+
+#agendar-btn{
+    border: 2px solid rgb(153, 76, 76);
+    padding: 8px;
+    border-radius: 20px;
+}
+
+#agendar-btn:hover{
+    background-color: rgb(153, 76, 76);
+    color: white;
+}
+
+
+a.meuBotao {
+    display: flex;
+    padding: 10px 20px;
+    background-color: rgb(255, 130, 130);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    width: 5.5%;
+    position: relative;
+    top: 160px;
+    left: 90px;
+}
+
+a.meuBotao:hover {
+    background-color: rgb(153, 76, 76);
+    transition: background-color 0.3s;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    a.meuBotao {
+        font-size: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    a.meuBotao {
+        width: 100%;
+        display: block;
+        margin: 20px auto;
+        position: static;
+        background-size: auto 100%; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+ 
+
+    a {
+        text-decoration: none; 
+    }
+
+    a.meuBotao {
+        font-size: 14px;
+    }
+}
